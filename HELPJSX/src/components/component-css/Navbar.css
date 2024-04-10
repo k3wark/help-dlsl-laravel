@@ -1,0 +1,140 @@
+@font-face
+{
+  font-family: Agency;
+  src: url(../assets/fonts/Agency.ttf);
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 12vh;
+}
+
+.navLinks
+{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.navLinks img
+{
+    display: block;
+    width: 11.5vw;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navLinkText
+{
+    display: block;
+    font-family: 'Agency';
+    font-size: 32px;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinkText:hover
+{
+    color: #780015;
+}
+
+.active
+{
+    color: #780015;
+    text-decoration: underline;
+}
+
+.navUser
+{
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.userText
+{
+    font-family: 'Agency';
+    font-size: 24px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.userText:active
+{
+    color: #780015;
+}
+
+.navUser:hover .userText
+{
+    color: #780015;
+}
+
+.userAvatar
+{
+    border: 2px solid #780015;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.userAvatar img
+{
+    width: 30px;
+}
+
+.dropdownContent
+{
+    position: absolute;
+    margin-top: 20vh;
+    z-index: 1;
+}
+
+.dropdownMenu
+{
+    border-radius: 7px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    width: 12vw;
+}
+
+.dropdownArrowContainer
+{
+    height: 20px;
+    overflow: hidden;
+}
+
+.dropdownArrow
+{
+    width: 0;
+    border: 1vw solid transparent;
+    border-top: 1vw solid #FFFFFF;
+	border-left: 1vw solid #FFFFFF;
+    transform: rotate(45deg);
+    box-shadow: -3px -3px 8px 0px rgba(0, 0, 0, .1);
+    margin: 5% 0 0 5%;
+}
+
+.dropdownMenu p
+{
+    font-family: 'Agency';
+    font-size: 20px;
+    padding: 18px 12px;
+    color: #8A8A8A;
+    transition: all 0.3s ease-in-out;
+}
+.dropdownMenu p:hover
+{
+    background: #EFEFEF;
+    color: #780015;
+}

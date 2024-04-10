@@ -1,0 +1,239 @@
+@font-face
+{
+  font-family: Agency;
+  src: url(../assets/fonts/Agency.ttf);
+}
+@font-face
+{
+  font-family: Poppins;
+  src: url(../assets/fonts/PoppinsRegular.ttf);
+}
+
+.loginMainDiv
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.helpDesc
+{
+    padding-left: 10.1%;
+    width: 55.7%;
+}
+
+.helpDesc img
+{
+    width: 100%;
+}
+
+.helpDescText
+{
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    text-align: justify;
+}
+
+.loginFill
+{
+    width: 35.4%;
+    padding-left: 7.6%;
+}
+
+.loginFill h1
+{
+    font-family: 'Agency';
+    font-size: 48px;
+}
+
+.loginFill h2
+{
+    font-family: 'Agency';
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.loginFill h3
+{
+    font-family: 'Agency';
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.loginUsername,
+.loginPassword
+{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    border: 2px solid #8f8f8f;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Agency';
+    font-size: 24px;
+    outline: none;
+}
+
+.loginUsername:focus,
+.loginPassword:focus, 
+.loginUsername:valid,
+.loginPassword:valid
+{
+    color: #780015; 
+    border: 2px solid #780015;
+}
+
+.loginUsername:focus + .userfill, 
+.loginPassword:focus + .userfill, 
+.loginUsername:valid + .userfill
+.loginPassword:valid + .userfill
+{
+    color: #780015;
+}
+
+.loginBtn
+{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Agency';
+    font-size: 24px;
+    color: #780015;
+    border: 2px solid #780015;
+    border-radius: 10px;
+    text-align: center;
+    user-select: none;
+    margin-top: 10%;
+    cursor: pointer;
+    background: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+    
+.loginBtn:hover
+{
+    background-color: #780015;
+    color: #ffff;
+    border: 2px solid #780015;
+}
+
+.loginRemFor
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.checkbox
+{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox input
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark
+{
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF;
+    border: 1px solid #780015;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.checkmark:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after
+{
+    display: block;
+}
+
+.checkbox .checkmark:after
+{
+    left: 10px;
+    top: 2px;
+    width: 7px;
+    height: 18px;
+    border: solid #780015;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.loginRem
+{
+    font-family: 'Agency';
+    font-size: 24px;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    margin: 2px 0 0 35px;
+}
+
+.checkbox:hover .loginRem
+{
+    color: #780015;
+}
+
+input[type="checkbox"]:checked ~ .loginRem
+{
+    color: #780015;
+}
+
+.loginFor
+{
+    font-family: 'Agency';
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.loginFor:hover
+{
+    color: #780015;
+}
+
+.loginSignup
+{
+    margin-top: 10%;
+    font-family: 'Agency';
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.loginSignup:hover
+{
+    color: #780015;
+}
+
+.errorMsg
+{
+    font-family: 'Agency';
+    font-size: 24px;
+    color: #780015;
+}

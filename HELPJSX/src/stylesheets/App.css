@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face
+{
+  font-family: Agency;
+  src: url(../assets/fonts/Agency.ttf);
+}
+
+a
+{
+  all: unset;
+}
+
+.nexusTag
+{
+  font-family: 'Agency';
+  font-size: 24px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.notMainDiv
+{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notMainDiv h1
+{
+  font-family: 'Agency';
+  font-size: 128px;
+  color: #780015;
+}
+
+.notMainDiv h2
+{
+  font-family: 'Agency';
+  font-size: 64px;
+}

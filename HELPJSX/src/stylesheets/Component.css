@@ -1,0 +1,843 @@
+@font-face{
+    font-family: 'PoppinsM';
+    src: url(../assets/fonts/PoppinsMedium.ttf);
+}
+@font-face{
+    font-family: 'PoppinsB';
+    src: url(../assets//fonts/PoppinsBold.ttf);
+}
+@font-face{
+    font-family: 'AgencyB';
+    src: url(../assets/fonts/Agency.ttf);
+}
+
+/* ======================================================== */
+/* HOME */
+.homeFrame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.counterIncidents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counterIncidents div
+{
+    display: flex;
+    align-items: center;
+}
+
+.counterIncidents .incidentsLogo{
+    width: 4vw;
+    place-self: center;
+}
+
+.homeFrame .dataText{
+    grid-area: 1/1;
+    place-self: end;
+}
+
+.dataText .titleText{
+  font-family: AgencyB;
+  font-size: 250px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #780015;
+  text-decoration: underline;
+
+
+}
+
+.counterIncidents .text
+{
+    font-family: AgencyB;
+    font-size: 48px;
+    color: #780015;
+}
+
+.dataText .detailsText{
+    margin: 0px;
+    font-family: PoppinsB;
+    font-size: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+
+.homeBtns{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.homeBtns .btn {
+
+    display: grid;
+    grid-template-columns: repeat(2, auto) ;
+    place-items: center;
+    width: 50vw;
+    height: 201px;    
+    padding: 0 261px 0 19px;
+    border-radius: 20px;
+    /* box-shadow: 10px 5px 10.6px 0 rgba(0, 0, 0, 0.36); */
+    border: solid 4px #780015;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-left: 5%;
+
+    font-family: AgencyB;
+    font-size: 64px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #780015;
+    
+}
+
+/* icon change */
+.imgSctn {
+    width: 127px;
+    height: 127px;
+    margin-top: 5px;
+    position: relative;
+    z-index: bottom;
+}
+
+.imgSctn img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgSctn .img2{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity:0;
+}
+
+
+.homeBtns .btn:hover{
+    /* border: solid 4px #780015; */
+    background-color: #780015;
+    color: white;
+    fill: white;
+    opacity:1;
+   filter: #780015;
+   border:none;
+   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
+ 
+
+
+}
+
+.btn:hover .imgSctn .img2{
+    opacity:1;
+} 
+
+.btn:hover .imgSctn .img1{
+    opacity:0;
+} 
+
+
+
+
+
+.homeFrame .textHeader{
+    font-family: AgencyB;
+    font-size: 64px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #780015;
+    margin:0px;
+    margin-top: px;
+    
+}
+
+
+.textHeader{
+    font-family: AgencyB;
+    font-size: 64px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin:0px;
+    margin-top: px;
+
+}
+
+/* ======================================================== */
+/* View History */
+
+
+::-webkit-scrollbar{
+    overflow: hidden;
+}
+.historyFrame{
+    margin-top: 1%;
+ 
+}
+.headerGroup{
+    display: flex;
+    flex-direction:  row;
+    white-space: nowrap;
+    margin-top: 0px;
+    margin-left: 120px;
+    margin-bottom: 19px;
+    gap: 12px;  
+}
+
+.headerGroup .textSctn{
+    display: flex;
+    flex-direction:  row;
+    gap: 36px;
+   
+}
+
+
+
+.headerGroup .textHeader{
+    margin: 0px;
+    color: #780015
+     
+}
+
+.textSctn .btn{
+    margin-top: 25%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.backButtonSctn{
+    position: relative;
+    z-index: -1;
+    border-radius: 12px;
+    padding: 0;
+    border: 2px solid #780015;
+    transition: all 0.3s ease-in-out;
+}
+
+/* for changing back button icon */
+.backButtonSctn img{
+    width: 2vw;
+}
+
+.backButtonSctn .img2{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity:0;
+}
+
+ .btn:hover {
+    border: none;
+    cursor: pointer;
+}
+
+ .btn:hover .img2{
+    opacity: 1;
+}
+
+.btn:hover .backButtonSctn
+{
+    background: #780015;
+}
+
+/* For Filter Incident Location Date Buttons */
+.headerGroup .btnSctn{
+    display: flex;;
+    flex-direction:  row;
+    gap: 13px;
+    margin-top:5px;
+    margin-left: 20px;
+
+}
+
+/* Radio Buttons of INcidents name date location */
+.radio{
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 6px;
+    border: solid 2px #636363;
+    background-color: transparent;
+
+    margin-right: 10px;
+    text-align: center;
+}
+
+.label .name{
+    position: relative;
+    top: 15px;
+
+    font-family: AgencyB;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #636363;
+    line-height: 0px;
+}
+
+.label:hover {
+   cursor:  pointer;
+   background-color: #780015;
+   border-color:#780015 ;
+}
+
+.label:hover .name{
+    color: white;
+ }
+
+#nameBtn:checked ~ .nameBtn,
+#typeBtn:checked ~ .typeBtn,
+#dateBtn:checked ~ .dateBtn,
+#locBtn:checked ~ .locBtn, 
+#nameBtn:checked ~ .nameBtn .name,
+#typeBtn:checked ~ .typeBtn .name,
+#dateBtn:checked ~ .dateBtn .name,
+#locBtn:checked ~ .locBtn .name{
+    background-color: #780015;
+    border-color:#780015 ;
+    color: white;
+}
+
+
+
+/* filter button */
+.btnSctn .filterBtnSctn, .btnSctn .checkInput{
+    width: 56px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Filter Button */
+.filterItem{
+    display: block;
+    position: relative;
+    /* width: 175px;
+    height: 175px; */
+    margin: 1.5px;
+
+}
+
+.filterItem .checkInput{
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filterItem .filterImage{
+    height: 5.5vh;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+.filterImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.filterImage .img2{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity:0;
+}
+
+.filterItem .checkInput:checked ~ .filterImage .img2 {
+    opacity:1;
+}
+.filterItem .checkInput:hover ~ .filterImage .img2 {
+    opacity:1;
+}
+
+/* Line before the listgroup */
+.line1{
+    margin: 0px;
+    width: 75vw;
+}
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: #780015;
+}
+
+
+/* LISTGROUP section */
+/* custom scrollbar */
+.listGroup::-webkit-scrollbar{
+    width: 15px;
+}
+
+.listGroup::-webkit-scrollbar-track{
+    background: #d9d9d9;
+    border-radius: 31px;
+   
+}
+
+.listGroup::-webkit-scrollbar-thumb{
+    background: #780015;
+    width: 14px;
+    height: 364px;
+    border-radius: 31px;
+}
+
+/* For contents */
+.listGroup{
+    width: 77.3vw;
+    margin-left: 11%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 64vh;
+}
+.contentSctn{
+    width: 75vw;
+    display: grid;
+    grid-template: repeat(2, minmax(auto, auto))/ repeat(4, minmax(auto, auto));
+    gap: 10px;
+    place-items: center start;
+}
+
+#historyCompleted
+{
+    background: #d9d9d9;
+}
+
+.loadingText
+{
+    font-family: 'AgencyB';
+    font-size: 40px;
+    margin-top: 2vh;
+}
+
+.btnSctn{
+    grid-column-start: 4;
+    place-self: end;
+    margin-right: 5%;
+
+}
+.line{
+    grid-row-start: 2;
+    grid-column: 1/span 4;
+}
+
+
+.allDataText{
+    display: grid;
+    grid-template-rows: repeat(2, minmax(auto, auto));
+    grid-template-columns: repeat(3, minmax(120px, max-content)); 
+
+}
+/* First Row */
+
+.contentSctn .img{
+    place-self: center start;
+    grid-row: 1 / span 2;
+    width: 6vw;
+}
+
+
+.allDataText .nameText{
+    place-self: end start;
+    grid-column: 2 / span 3;
+    margin: 0px;
+    font-family: AgencyB;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+
+/* Middle and Third Row */
+
+.allDataText .lowerText, .allDataText .midText{
+    grid-column: 2 /span 3;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(max-content,50%));
+    place-items: start;
+
+}
+
+.allDataText .midText{
+    margin-bottom: 5px;
+}
+
+
+
+.allDataText .titleText{
+    margin:0px;
+    font-family: AgencyB;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #780015;
+}
+
+.allDataText .titleText{
+    margin:0px;
+}
+.allDataText .inputText{
+    margin:0px;
+   font-family: PoppinsB;
+   font-size: 16px;
+   font-weight: bold;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: left;
+   color: #000;
+   
+   }
+
+   
+   /* button */
+.listGroup .btn{
+    width: 130px;
+  height: 39px;
+  margin: 33px 0 0 ;
+  border-radius: 5px;
+  background-color: #780015;
+  border-color: #780015;
+
+
+  font-family: AgencyB;
+  font-size: 16px;
+  color: white;
+}
+
+
+
+/* ======================================================== */
+/* MORE DETAILS */
+
+.moreDetailsFrame{
+    margin: 2% 0 0 8%;
+    display: flex;
+}
+
+.moreDetailsFrame .btn {
+    border: none;
+    background: transparent;
+}
+
+.emerType{
+    place-self: start center;
+    width: 7vw;
+    margin-left: 1%;
+}
+
+/* main data */
+
+.detailsContainer
+{
+    display: flex;
+}
+
+.loadingInformationSctn
+{
+    width: 47vw;
+    display: flex;
+    padding: 5vh 0;
+    justify-content: center;
+    font-size: 40px;
+    color: #780015;
+    font-family: 'AgencyB';
+}
+
+.moreDetailsFrame .informationSctn{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-left: 1%;
+}
+
+.informationTop
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informationBot
+{
+    display: flex;
+}
+
+.infoLocation
+{
+    margin-right: 15%;
+}
+
+.informationSctn .btnLarge{
+    
+    pointer-events: none;
+    width: 297px;
+    height: 68px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   border: solid 1px #780015;
+   background-color: #780015;
+    text-align: center;
+ }
+
+ .informationSctn .titleText{
+    font-family: AgencyB;
+    font-size: 40px;
+    color: #000;
+    margin:0px;
+    padding: 0px;
+    place-self: start start;
+ }
+
+.mainTextSctn{
+    grid-column: span 2;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+
+.mainTextSctn .bodyText{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    color: #000;
+}
+
+.areaDiv
+{
+    margin-top: 2%;
+}
+
+.informationSctn .btnSmall{
+    pointer-events: none;
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: solid 1px #780015;
+    background-color: #780015;
+ }
+
+.btnTxt{
+    font-family: AgencyB;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin: 0px;
+ }
+
+ .informationSctn .locBtn{
+    place-self:  start;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+ }
+
+ /* ID on the rightside */
+
+.idSosCol
+{
+    margin-left: 5%;
+}
+
+.detailsUserCard
+{
+    border: 4px solid #780015;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .5);
+    width: 23vw;
+    height: 60vh;
+    position: relative;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.detailsUserLevel
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 61%;
+    width: 25%;
+    background: #780015;
+    border-radius: 0 0 0 245px;
+}
+
+.detailsUserLevel p
+{
+    font-family: 'Agency';
+    font-size: 64px;
+    color: #FFFFFF;
+    transform: rotate(270deg) translateX(-80%);
+}
+
+.detailsUserCardTop
+{
+    display: flex;
+}
+
+.detailsAvatar
+{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10%;
+}
+
+.detailsAvatar img
+{
+    width: 5vw;
+}
+
+.detailsUserGrade
+{
+    transform: rotate(90deg) translateY(53%) translateX(80%);
+    font-size: 20px;
+    font-family: 'Agency';
+}
+
+.detailsUserFirst
+{
+    margin-top: 3%;
+    font-size: 45px;
+    font-family: 'Agency';
+}
+
+.detailsUserLast
+{
+    font-size: 45px;
+    font-family: 'Agency';
+}
+
+.detailsUserDetails
+{
+    font-family: 'PoppinsSemiBold';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.detailsUserDetails img
+{
+    width: 10%;
+    margin-right: 5%;
+}
+
+.detailsPin img
+{
+    height: 3vh;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+
+/* lower buttons */
+
+.statusBtns
+{
+    margin-top: 2%;
+}
+
+.statusBtns .statusText
+{
+    font-family: 'Agency';
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.statusBtns input
+{
+    display: none;
+}
+
+.statusBtns .statusOption
+{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #780015;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Agency';
+    font-size: 36px;
+    color: #780015;
+    cursor: pointer;
+    padding: 12px 0;
+    width: 14vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.statusBtns input:checked + .statusOption
+{
+    background: #780015;
+    color: #FFFFFF;
+}
+
+.statusOptionClicked
+{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #780015;
+    background: #780015;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Agency';
+    font-size: 36px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 12px 0;
+    width: 14vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.statusBtns .statusOption:hover
+{
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+}

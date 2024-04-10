@@ -1,0 +1,118 @@
+@font-face
+{
+    font-family: Agency;
+    src: url(../assets/fonts/Agency.ttf);
+}
+@font-face
+{
+    font-family: PoppinsMedium;
+    src: url(../assets/fonts/PoppinsMedium.ttf);
+}
+
+.userBackBtn
+{
+    position: absolute;
+    top: 17.6%;
+    left: 21.9%;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #780015;
+    background: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.userBackBtn:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.userMainDiv
+{
+    display: flex;
+    justify-content: center;
+}
+
+.userContent
+{
+    width: 41.7vw;
+    padding: 2% 0;
+}
+
+.profileTop
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileTop h1
+{
+    font-family: 'Agency';
+    font-size: 64px;
+    color: #780015;
+}
+
+.profileTop img
+{
+    width: 9vw;
+}
+
+.userContent h2
+{
+    margin-top: 1%;
+    font-family: 'Agency';
+    font-size: 24px;
+}
+
+.userContent input[type=text]
+{
+    width: 100%;
+    font-family: 'PoppinsMedium';
+    font-size: 20px;
+    color: #636363;
+    padding: 25px 20px;
+    background: rgba(120, 0, 21, 0.10);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 1% 0;
+}
+
+.userContent input[type=text]:focus
+{
+    border: 1px solid #780015;
+    background: #FFFFFF;
+    outline: none;
+    color: #780015;
+}
+
+.userPasswordBtn
+{
+    display: flex;
+    justify-content: center;
+}
+
+.userPasswordBtn button
+{
+    font-family: 'Agency';
+    font-size: 24px;
+    width: 40%;
+    margin-top: 3%;
+    background: #FFFFFF;
+    color: #780015;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #780015;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.userPasswordBtn button:hover
+{
+    background: #780015;
+    color: #FFFFFF;
+}

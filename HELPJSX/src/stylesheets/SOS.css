@@ -1,0 +1,69 @@
+@font-face 
+{
+    font-family: Agency;
+    src: url(../assets/fonts/Agency.ttf);
+}
+@font-face 
+{
+    font-family: PoppinsBold;
+    src: url(../assets/fonts/PoppinsBold.ttf);
+}
+
+.sosMainDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sosMainDiv h1
+{
+    font-family: 'Agency';
+    font-size: 128px;
+    color: #780015;
+    text-align: center;
+}
+
+.sosTypeSelection
+{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.typeCard
+{
+    width: 23.7vw;
+    height: 50.9vh;
+    border: 4px solid #780015;
+    border-radius: 20px;
+    margin: 0 2vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .5);
+    transition: all 0.3s ease-in-out;
+}
+
+.typeCard h1
+{
+    font-family: 'PoppinsBold';
+    font-size: 48px;
+}
+
+.typeCard h2
+{
+    font-family: 'PoppinsBold';
+    font-size: 32px;
+    color: #780015;
+    margin-top: 1%;
+}
+
+.typeCard:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, .5);
+}

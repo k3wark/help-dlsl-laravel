@@ -1,0 +1,46 @@
+@font-face
+{
+    font-family: Agency;
+    src: url(../assets/fonts/Agency.ttf);
+}
+@font-face
+{
+    font-family: Poppins;
+    src: url(../assets/fonts/PoppinsRegular.ttf);
+}
+
+.aboutMainDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.aboutContent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+
+.aboutContent h1
+{
+    color: #780015;
+    font-family: 'Agency';
+    font-size: 96px;
+}
+
+.aboutContent img
+{
+    width: 62.5vw;
+}
+
+.aboutContent p
+{
+    margin-top: 2%;
+    font-family: 'Poppins';
+    font-size: 24px;
+    text-align: justify;
+}

@@ -1,0 +1,272 @@
+@font-face
+{
+    font-family: Agency;
+    src: url(../assets/fonts/Agency.ttf);
+}
+@font-face
+{
+    font-family: PoppinsLight;
+    src: url(../assets/fonts/PoppinsLight.ttf);
+}
+
+.emsBackBtn
+{
+    position: absolute;
+    top: 13.4%;
+    left: 11.5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #780015;
+    background: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.emsBackBtn:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.emsMainDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emsTitle
+{
+    font-family: 'Agency';
+    font-size: 64px;
+    color: #780015;
+}
+
+.emsContent
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 11.5vw;
+    margin-top: 3%;
+}
+
+.emsLeft
+{
+    width: 37.5vw;
+}
+
+.emsRadio
+{
+    margin-bottom: 2%;
+}
+
+.emsRadio h2
+{
+    font-family: 'Agency';
+    font-size: 40px;
+}
+
+.emsRadioOptions
+{
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: 8vh;
+    margin-top: 1%;
+}
+
+.emsRadio input
+{
+    display: none;
+}
+
+.emsRadio .conditionOption
+{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #780015;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'PoppinsLight';
+    font-size: 24px;
+    color: #780015;
+    cursor: pointer;
+    padding: 13px 0;
+    width: 17.7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.emsRadio input:checked + .conditionOption
+{
+    background: #780015;
+    color: #FFFFFF;
+}
+
+.emsRadio .conditionOption:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.emsOther h2
+{
+    font-family: 'Agency';
+    font-size: 40px;
+}
+
+.emsOther textarea
+{
+    display: flex;
+    width: 100%;
+    height: 21.3vh;
+    padding: 25px;
+    resize: none;
+    font-family: 'PoppinsLight';
+    font-size: 20px;
+    color: #636363;
+    background: rgba(120, 0, 21, 0.10);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 2% 0;
+}
+
+.emsOther textarea:focus
+{
+    border: 1px solid #780015;
+    background: #FFFFFF;
+    outline: none;
+    color: #780015;
+}
+
+.emsOther textarea::placeholder
+{
+    transition: all 0.3s ease-in-out;
+}
+
+.emsOther textarea:focus::placeholder
+{
+    color: #780015;
+    opacity: 60%;
+}
+
+.emsLocation h2
+{
+    font-family: 'Agency';
+    font-size: 40px;
+}
+
+.emsRight
+{
+    margin-left: 6%;
+    width: 37.5vw;
+}
+
+.emsLocation input[type=text]
+{
+    width: 100%;
+    font-family: 'PoppinsLight';
+    font-size: 24px;
+    color: #636363;
+    padding: 20px;
+    background: rgba(120, 0, 21, 0.10);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 2% 0;
+}
+
+.emsLocation input[type=text]:focus
+{
+    border: 1px solid #780015;
+    background: #FFFFFF;
+    outline: none;
+    color: #780015;
+}
+
+.emsLocation input[type=text]::placeholder
+{
+    transition: all 0.3s ease-in-out;
+}
+
+.emsLocation input[type=text]:focus::placeholder
+{
+    color: #780015;
+    opacity: 60%;
+}
+
+.emsFloor h2
+{
+    font-family: 'Agency';
+    font-size: 40px;
+}
+
+.emsFloorOptions
+{
+    display: flex;
+    margin-top: 2%;
+}
+
+.emsFloor input
+{
+    display: none;
+}
+
+.emsFloor .conditionOption
+{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #780015;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'PoppinsLight';
+    font-size: 24px;
+    color: #780015;
+    cursor: pointer;
+    padding: 1vw 1.5vw;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1vw;
+}
+
+.emsFloor input:checked + .conditionOption
+{
+    background: #780015;
+    color: #FFFFFF;
+}
+
+.emsFloor .conditionOption:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sosBtnContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emsSOSBtn
+{
+    background: #780015;
+    font-family: 'Agency';
+    font-size: 48px;
+    color: #FFFFFF;
+    border: 1px solid #780015;
+    border-radius: 10px;
+    width: 20.8%;
+    padding: 10px 0;
+    margin-top: 2%;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.emsSOSBtn:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.15);
+}
