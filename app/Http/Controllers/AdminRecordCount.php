@@ -10,9 +10,15 @@ class AdminRecordCount extends Controller
     public function index(){
         
         $count = Report::where('Status', 'Ongoing')->count();
-        $ems_count = Report::where('type', 'EMS')->count();
-        $security_count = Report::where('type', 'Security')->count();
-        $fire_count = Report::where('type', 'Fire')->count();
+        $ems_count = Report::where('type', 'EMS')
+        ->where('Status', 'Ongoing')
+        ->count();
+        $security_count = Report::where('type', 'Security')
+        ->where('Status', 'Ongoing')
+        ->count();
+        $fire_count = Report::where('type', 'Fire')
+        ->where('Status', 'Ongoing')
+        ->count();
         
         return response()->json([
             'count' => $count,
