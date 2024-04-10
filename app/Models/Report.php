@@ -21,22 +21,22 @@ class Report extends Model
     ];
 
     public function user(){
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(User::class);
     }
 
     public function ems(){
-        return $this->hasOne(ems::class);
+        return $this->hasOne(EMS::class);
     }
 
     public function fire(){
-        return $this->hasOne(fire::class);
+        return $this->hasOne(FIRE::class);
     }
 
     public function security(){
-        return $this->hasOne(security::class);
+        return $this->hasOne(SECURITY::class);
     }
 
     public function location(){
-        return $this->hasOne(location::class);
+        return $this->hasOne(Location::class);
     }
 }
