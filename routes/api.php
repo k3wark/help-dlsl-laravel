@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 
 // AUTHORIZED PAGE ONLY BECAUSE WE HAVE GET FROM DATABASE
 // group only if there is /logout since it has get from database such as user
-Route::middleware('auth:sanctum') -> group( function(){
+Route::middleware('cors') -> group( function(){
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
