@@ -13,6 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('locations', function (Blueprint $table) {
+            $table->id();
             $table->foreignIdFor(Report::class)->constrained();
             $table->string('Building', 255)->nullable();
             $table->string('Room', 255)->nullable();
